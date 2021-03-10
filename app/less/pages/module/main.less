@@ -1,0 +1,694 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family:  UTM Avo;
+    src: url("../../../../dist/fonts/UTM\ Avo.ttf");
+}
+
+@font-face{
+    font-family: UTM AvoItalic ;
+    src: url("../../../../dist/fonts/UTM\ AvoItalic.ttf");
+}
+
+@font-face{
+    font-family: UTM AvoBold ;
+    src: url("../../../../dist/fonts/UTM\ AvoBold.ttf");
+}
+
+@font-face{
+    font-family: OpenSans ;
+    src: url("../../../../dist/fonts/OpenSans.ttf");
+}
+
+@font-face{
+    font-family: OpenSans-Bold;
+    src: url("../../../../dist/fonts/OpenSans-Bold.ttf");
+}
+
+@font-face{
+    font-family: OpenSans-Italic ;
+    src: url("../../../../dist/fonts/OpenSans-Italic.ttf");
+}
+
+@font-face{
+    font-family: OpenSans-SemiBold ;
+    src: url("../../../../dist/fonts/OpenSans-SemiBold.ttf");
+}
+
+@font-face{
+    font-family: Montserrat-Bold;
+    src: url("../../../../dist/fonts/Montserrat-Bold.ttf");
+}
+
+@font-face{
+    font-family: Montserrat-Italic ;
+    src: url("../../../../dist/fonts/Montserrat-Italic.ttf");
+}
+
+@font-face{
+    font-family: SFUDaxCondensedExtraBold;
+    src: url("../../../../dist/fonts/SFUDaxCondensedExtraBold.TTF");
+}
+body{
+    font-family: OpenSans ;
+}
+main{
+    overflow: hidden;
+}
+
+.myToggle1{
+    animation: rotate 3s linear;
+    transform-style: preserve-3d;
+}
+.myToggle2{
+    animation: rotate1 3s linear;
+    transform-style: preserve-3d;
+}
+.active{
+
+}
+/* start keyfarme of index */
+@keyframes style-section {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+        text-shadow: 10px 20px 5px #ccc;
+        // padding-bottom: 20px;
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes box-link{
+    0%{
+        transform: translateY(-50%) rotate(-360deg);
+    }
+
+    100%{
+        transform: translateY(-50%) rotate(0);
+    }
+}
+
+@keyframes style-after{
+    0%{
+        transform: rotate(5deg);
+    }
+    50%{
+        transform: rotate(-5deg);
+    }
+    100%{
+        transform: rotate(5deg);
+    }
+}
+
+@keyframes intro-style{
+    0%{
+        transform: translateX(0)
+    }
+
+    50%{
+        transform: translateX(-80px)
+    }
+    100%{
+        transform: translateX(0)
+    }
+}
+
+@keyframes intro-style2{
+    0%{
+        transform: translateX(0)
+    }
+
+    50%{
+        transform: translateX(80px)
+    }
+    100%{
+        transform: translateX(0)
+    }
+}
+
+@keyframes field_personal1{
+    0%,9%{
+        opacity: 0;
+    }
+    10%,79%{
+        opacity: 1;
+    }
+    80%,100%{
+        opacity: 0;
+    }
+}
+@keyframes field_tower1{
+    0%,15%{
+        transform:scale(0);
+    }
+    17%,75%{
+        transform:scale(1);
+    }
+    76%,100%{
+        transform:scale(0);
+    }
+}
+
+@keyframes field_personal2{
+    0%,20%{
+        opacity: 0;
+    }
+    21%,65%{
+        opacity: 1;
+    }
+    66%,100%{
+        opacity: 0;
+    }
+}
+@keyframes field_tower2{
+    0%,25%{
+        transform:scale(0);
+        transform-origin: bottom center;
+    }
+    26%,70%{
+        transform:scale(1);
+        transform-origin: bottom center;
+    }
+    71%,100%{
+        transform:scale(0);
+        transform-origin: bottom center;
+    }
+}
+
+@keyframes field_personal3{
+    0%,35%{
+        opacity: 0;
+    }
+    36%,55%{
+        opacity: 1;
+    }
+    56%,100%{
+        opacity: 0;
+    }
+}
+@keyframes field_tower3{
+    0%,30%{
+        transform:scale(0);
+        transform-origin: bottom center;
+
+    }
+    31%,60%{
+        transform:scale(1);
+        transform-origin: bottom center;
+
+    }
+    61%,100%{
+        transform:scale(0);
+        transform-origin: bottom center;
+
+    }
+}
+@keyframes field_tower4{
+    0%,45%{
+        transform:scale(0);
+        transform-origin: bottom center;
+
+    }
+    46%,70%{
+        transform:scale(1);
+        transform-origin: bottom center;
+    }
+    
+    71%,100%{
+        transform:scale(0);
+        transform-origin: bottom center;
+
+    }
+}
+@keyframes field-layer2{
+    0%,50%{
+        transform: scale(0);
+        transform-origin: bottom center;
+    }
+    51%,75%{
+        transform: scale(1);
+        transform-origin: bottom center;
+    }
+    76%,100%{
+        transform: scale(0);
+        transform-origin: bottom center;
+    }
+}
+
+@keyframes field-layer3{
+    0%,50%{
+        transform: scale(0);
+        transform-origin: bottom center;
+    }
+    51%,75%{
+        transform: scale(1);
+        transform-origin: bottom center;
+    }
+    76%,100%{
+        transform: scale(0);
+        transform-origin: bottom center;
+    }
+}
+@keyframes field_main_hiden{
+    0%,30%{
+        opacity:0;
+    }
+    50%,100%{
+        opacity: 1;
+    }
+}
+@keyframes field_main_tower{
+    0%,16%{
+        transform: scale(0);
+        transform-origin: bottom center;
+    }
+    18%,74%{
+        transform: scale(1);
+        transform-origin: bottom center;
+    }
+    75%,100%{
+        transform: scale(0);
+        transform-origin: bottom center;
+    }
+}
+@keyframes rotate1{
+    0%{
+        transform: rotate(-20deg);
+    }
+    100%{
+       rotate: rotate(-50deg);
+    }
+    40%{
+        rotate: rotate(-70deg);
+    }
+    100%{
+        rotate: rotate(0deg);
+    }
+}
+@keyframes delay1{
+    0%{
+        transform: scaleY(0);
+    }
+
+    50%{
+        transform: scaleY(1);
+    }
+
+    100%{
+        transform: scaleY(0);
+    }
+}
+@keyframes delay2{
+    0%{
+        transform: translateY(-6px);
+    }
+
+    50%{
+        transform: translateY(0);
+    }
+
+    100%{
+        transform: translateY(-6px);
+    }
+}
+@keyframes recruitment_personal{
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-5%);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes recruiment_icon{
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-15%);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes recruitment-chat{
+    0%,60%{
+        opacity: 0;
+        // transition: all 0.5s;
+    }
+
+    61%,90%{
+        opacity: 1;
+    }
+
+    91%,100%{
+        opacity: 0;
+    }
+}
+
+@keyframes recruitment-step1{
+    0%,10%{
+        opacity: 0;
+    }
+
+    11%,100%{
+        opacity: 1;
+    }
+}
+
+@keyframes recruitment-step2{
+    0%,12%{
+        opacity: 0;
+    }
+
+    13%,100%{
+        opacity: 1;
+    }
+}
+
+@keyframes recruitment-step3{
+    0%,14%{
+        opacity: 0;
+    }
+
+    15%,100%{
+        opacity: 1;
+    }
+}
+
+@keyframes recruitment-step4{
+    0%,58%{
+        opacity: 0;
+        // transition-delay: 0.5s;
+    }
+
+    59%,100%{
+        opacity: 1;
+    }
+}
+
+@keyframes recruitment-step5{
+    0%,59%{
+        opacity: 0;
+        // transition-delay: 0.5s;
+    }
+
+    60%,100%{
+        opacity: 1;
+    }
+}
+@keyframes recruitment_click1{
+    0%, 10% {
+        bottom: 8%;
+        left: -20.4%;
+        opacity: 0;
+        z-index: -1;
+    }
+    15%, 44% {
+        bottom: 6%;
+        left: -11.6%;
+        opacity: .5;
+    }
+    47%, 90% {
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        opacity: 1;
+    }
+    100%, 91% {
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        z-index: 1;
+    }
+}
+
+@keyframes recruitment_click2{
+    0%, 10% {
+        bottom: 8%;
+        left: -20.4%;
+        opacity: 0;
+        z-index: -1;
+    }
+    15%, 44% {
+        bottom: 9%;
+        left: -24.6%;
+        opacity: .5;
+    }
+    47%, 90% {
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        opacity: 1;
+
+    }
+    100%, 91% {
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        z-index: 1;
+    }
+}
+@keyframes field_show{
+    0%{
+        transform: scale(1);
+        transform-origin: left right center;
+    }
+
+    50%{
+        transform: scale(0.8);
+        transform-origin: left right center;
+
+    }
+
+    100%{
+        transform: scale(1);
+        transform-origin: left right center;
+    }
+}
+
+@keyframes field_show_hover{
+    from{
+        transform: scale(0.9);
+        transform-origin: left center;
+    }
+
+    to{
+        transform: scale(1);
+        transform-origin: left center;
+    }
+}
+/* end keyfarme of index */
+
+
+@keyframes rotate-item1{
+    0%{
+        left: 6%;
+        bottom: 14%;
+    }
+    10%{
+        left: -2.5%;
+        bottom: 21.4%;
+    }
+    20%{
+        left: -6.2%;
+        bottom: 28.8%;
+    }
+    30%{
+        left: -8.3%;
+        bottom: 36.2%;  
+    }
+
+    40%{
+        left: -9.5%;
+        bottom: 43.6%;
+    }
+    50%{
+        left: -9.5%;
+        bottom: 51%;
+    }
+    60%{
+        left: -8.4%;
+        bottom: 58.4%;
+    }
+    70%{
+        left: -6%;
+        bottom: 65.8%;
+    }
+    80%{
+        left: -2.5%;
+        bottom: 73.2%;
+    }
+    90%{
+        left: 3%;
+        bottom: 80.6%;
+    }
+    100%{
+        left: 7%;
+        bottom: 86%;
+    }
+}
+@keyframes rotate-item2{
+    0%{
+        bottom: 16%;
+        left: 77%;
+    }
+    10%{
+        bottom: 7%;
+        left: 69.9%;
+    }
+    20%{
+        left: 62.2%;
+        bottom: 2.5%;
+    }
+    30%{
+        left: 55.1%;
+        bottom: -0.5%;
+    }
+
+    40%{        
+        left: 48.6%;
+        bottom: -1.8%;
+    }
+    50%{        
+        left: 41.5%;
+        bottom: -2.4%;
+    }
+    60%{        
+        left: 34.4%;
+        bottom: -2%;
+    }
+    70%{        
+        left: 27.3%;
+        bottom: -0.8%;
+
+    }
+    80%{        
+        left: 20.2%;
+        bottom: 2.3%;
+    }
+    90%{        
+        left: 13.1%;
+        bottom: 6%;
+    }
+    100%{        
+        left: 6%;
+        bottom: 14%;
+
+    }
+}
+@keyframes rotate-item3{
+    0%{
+        bottom: 85%;
+        left: 74%;
+    }
+    10%{
+        bottom: 78.1%;
+        left: 80%;
+    }
+    20%{
+        bottom: 71.2%;
+        left: 84.6%;
+    }
+    30%{
+        bottom: 64.3%;
+        left: 87.5%;    
+    }
+
+    40%{
+        bottom: 57.4%;
+        left: 89.5%;
+    }
+    50%{
+        bottom: 50.5%;
+        left: 90.4%  
+    }
+    60%{
+        bottom: 43.6%;
+        left: 90.4%;
+    }
+    70%{
+        bottom: 37.1%;
+        left: 89.5%;    
+    }
+    80%{
+        bottom: 30.2%;
+        left: 87.5%;
+    }
+    90%{
+        bottom: 23.3%;
+        left: 84.4%;
+    }
+    100%{
+        bottom: 16%;
+        left: 77%;
+    }
+}
+@keyframes rotate-item4{
+    0%{
+        left: 9%;
+        bottom: 86%;
+    }
+    10%{
+        left: 15.5%;
+        bottom: 91.5%;
+    }
+    20%{
+        left: 22%;
+        bottom: 94.6%;
+    }
+    30%{
+        left: 28.5%;
+        bottom: 96.7%;
+    }
+
+    40%{
+        left: 35%;
+        bottom: 97.7%;
+    }
+    50%{
+        left: 41.5%;
+        bottom: 98%;
+    }
+    60%{
+        left: 48%;
+        bottom: 97.5%;
+    }
+    70%{
+        left: 54.5%;
+        bottom: 95.9%;
+    }
+    80%{
+        left: 61%;
+        bottom: 93.5%;
+    }
+    90%{
+        left: 67.5%;
+        bottom: 90%;
+    }
+    100%{
+        bottom: 85%;
+        left: 74%;
+    }
+}
+
+.show{
+    animation: field_show 5s infinite linear;
+    animation-delay: 1.5s;
+}
+
